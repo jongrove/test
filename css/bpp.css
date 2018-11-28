@@ -6,7 +6,6 @@ body {
 	color: #3C3C3B;
 	font-size:16px;
 	line-height: 18px;
-	background-color: #F9F7F7;
 
 }
 .divider {
@@ -132,6 +131,7 @@ p {
 }
 .btn-sm:focus {
 	border:1px solid #F9B049;
+	outline: none;
 }
 .btn-sm.focus {
 	border:1px solid #F9B049;
@@ -152,6 +152,7 @@ p {
 	font-size: 13px;
 	background-color: #DCDADA;
 	padding:4px 5px;
+	cursor: pointer;
 }
 .task span {
 	display: inline-block;
@@ -235,4 +236,60 @@ p {
  }
  .pagination .page-item.active a {
  	color: #ffffff;
- } 
+ }
+
+
+ /*Forms*/
+ .form-group {
+ 	margin-bottom:10px;
+ }
+ label {
+ 	display: inline-block;
+    margin-bottom: 5px;
+    font-size: 14px;
+    font-weight: 700;
+ }
+ .form-control {
+    display: block;
+    width: 100%;
+    height: 45px;
+    padding: 0px 8px;
+    font-size: 16px;
+    line-height: 1.5;
+    color: #3C3C3B;
+    font-weight: 300;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #acacac;
+    border-radius: 0px;
+    -webkit-appearance: none;
+  	-webkit-border-radius: 0px;
+    transition: border-color .15s ease-in-out,box-shadow .15s ease-in-out;
+ }
+
+select.form-select {
+    width: 100%;
+    height: 45px;
+    border: 1px solid #acacac;
+    color: #3C3C3B;
+    font-size: 16px;
+    font-weight: 300;
+    background: #fff url('https://cdn3.iconfinder.com/data/icons/google-material-design-icons/48/ic_keyboard_arrow_down_48px-128.png') no-repeat;
+    background-size: 20px;
+    background-position:  right 10px center;
+    padding: 2px 8px;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -webkit-border-radius: 1px;
+    -moz-border-radius: 1px;
+    border-radius: 1px;
+}
+select.form-control[multiple], select.form-control[size] {
+    height: auto;
+    padding:8px;
+    font-weight: 300;
+}
+textarea.form-control {
+	min-height: 100px;
+	padding:8px;
+}
